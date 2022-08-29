@@ -1,0 +1,15 @@
+BOX-SIZING:- BORDER-BOX //width and height apply to the all parts of element like border text
+scroll-behavior:smooth;//Allows a smooth animated "scroll effect" between elements within the scrolling box
+:root:- is used to declare variables.
+::-webkit-scrollbar:- to edit scrollbar
+position:fixed //it will fix the position of that div no matter we scroll or not
+display:flex //iske adar items hote hai jese ki div unko ham control kar sakte hai is ke andar ati hai justify-content,align-items
+background-size:cover //	Resize the background image to cover the entire container
+display: inline-block;//todisplay item horizontally
+flex-wrap: wrap;//it is used with display flex and it will wrap the item if necessary
+flex-basis:60%;//yeh bhi flex ke sath use hota isme ham each flex item jo ki div hai uski width decide karte hai
+position:relative//now element can change position using left,top,right
+display: block //means that the element is displayed as a block, as paragraphs and headers have always been.
+display:grid //It is basically row col table
+To add icon use fontawesome.com
+ transform: translateY(-10px);//usually used in hover tag to move the div elementyah jo bhi

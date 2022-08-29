@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=fd, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/e97326952b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="loho.png" alt="" class="logo">
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="#">SERVICES</a></li>
+                    <li><a href="#">PORTFOLIO</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>Software developer</p>
+                <h1>Hi iam <span>Abhinav gupta</span> <br>from ireland</h1>
+            </div>
+        </div>
+    </div>
+    <!-- about -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="linkedin.jpeg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subtitle">About me</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam repellat aut sunt, iusto dignissimos vel. Nulla, aut nesciunt. Iusto velit maiores perferendis. Nostrum cum, at dolores architecto quidem ab ea.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Video editing</span><br>Designing web app interfaces</li>
+                            <li><span>Web Development</span><br>web app development</li>
+                            <li><span>App development</span><br>Designing web app iterfaces</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Vediting</span><br>Designing web app interfaces</li>
+                            <li><span>W Development</span><br>web app development</li>
+                            <li><span>A development</span><br>Designing web app iterfaces</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Video editing</span><br>Designing web app interfaces</li>
+                            <li><span>Web Development</span><br>web app development</li>
+                            <li><span>App development</span><br>Designing web app iterfaces</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!------- services -------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+
+
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda illo excepturi cum suscipit earum ea eveniet nemo eligendi, ad facere officiis, sed expedita voluptates vitae fugit repudiandae labore placeat! Qui!</p>
+                </div>
+                <div>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda illo excepturi cum suscipit earum ea eveniet nemo eligendi, ad facere officiis, sed expedita voluptates vitae fugit repudiandae labore placeat! Qui!</p>
+                </div>
+                <div>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda illo excepturi cum suscipit earum ea eveniet nemo eligendi, ad facere officiis, sed expedita voluptates vitae fugit repudiandae labore placeat! Qui!</p>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <!-- PORTFOLIO -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="image1.jpg" alt="">
+                    <div class="layer">
+                        <h3>Social media app</h3>
+                        <p>srjfljsdklfjlks sdjflsdjflsdjf sdjflsjdflsdjkf sdjflsjdflsdjkf\
+                        </p>
+                        <a href="#"><i class="fa-solid fa-heart"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="imag2.jpg" alt="">
+                    <div class="layer">
+                        <h3>Social media app</h3>
+                        <p>srjfljsdklfjlks sdjflsdjflsdjf sdjflsjdflsdjkf sdjflsjdflsdjkf\
+                        </p>
+                        <a href="#"><i class="fa-solid fa-heart"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="image3.jpg" alt="">
+                    <div class="layer">
+                        <h3>Social media app</h3>
+                        <p>srjfljsdklfjlks sdjflsdjflsdjf sdjflsjdflsdjkf sdjflsjdflsdjkf\
+                        </p>
+                        <a href="#"><i class="fa-solid fa-heart"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        // on click it displays require skill,experience
+        var tablinks=document.getElementsByClassName("tab-links")
+        var tabcontents=document.getElementsByClassName("tab-contents")
+        function opentab(tabname)
+        {
+            for(tablink of tablinks )
+            {
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents )
+            {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link")
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+</body>
+</html>
